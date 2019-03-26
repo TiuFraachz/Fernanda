@@ -9,7 +9,7 @@ module.exports.run = async (client, message, args) => {
 
     .setTitle("Meus Comandos 🔖")
     .setColor("C1FF00")
-    .setDescription("**Comandos:** \n$convite\n$privado\n$say\n$doar\n$servidores\n$ontime\n$sugestao\n$info\n$total\n$reload")
+    .setDescription("**Comandos:** \ns!convite\ns!privado\ns!say\ns!doar\ns!servidores\ns!ontime\ns!sugestao\ns!info\ns!total\ns!reload")
     .setFooter("Comando Requisitado por: " + nomeeapelido, message.author.avatarURL)
     .setTimestamp(new(Date))
 

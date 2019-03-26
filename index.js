@@ -18,10 +18,11 @@ fs.readdir("./comandos/", (err, files) => {
     });
 });
 
-let prefix = '$'
+let prefix = 's!'
 let status = [
     { name: `Deseja alguma ajuda com os comandos ? ${prefix}comandos 🌠`, type: 'STREAMING', url: 'https://www.twitch.tv/frachzin_' },
-    { name: `Me doe usando $doar`, type: 'STREAMING', url: 'https://www.twitch.tv/frachzin_' },
+    { name: `Me doe usando s!doar`, type: 'STREAMING', url: 'https://www.twitch.tv/frachzin_' },
+    { name: `Fui feito pelo Fraachz_#4191`, type: 'STREAMING', url: 'https://www.twitch.tv/frachzin_' }
   ];
   
   //STREAMING = TRANSMITINDO
