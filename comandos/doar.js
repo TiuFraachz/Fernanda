@@ -5,7 +5,6 @@ module.exports.run = async (client, message, args) => {
     message.delete(); 
 
     let usuario = '<:usere:531535895875158016>';
-    let nomeeapelido = message.guild.user(message.author.id).nickname || message.author.username;
 
     let embed = new Discord.RichEmbed()
     
@@ -15,7 +14,7 @@ module.exports.run = async (client, message, args) => {
     .addField("Me doe 10 Reais;", `<:013review:535064516233396225> [[Clique Aqui]](https://www.mercadopago.com/mlb/checkout/start?pref_id=333126709-93d5c226-cbb4-437c-9b8f-3504c5b06aaf)`)
     .addField("Me doe 15 Reais;", `<:013review:535064516233396225> [[Clique Aqui]](https://www.mercadopago.com/mlb/checkout/start?pref_id=333126709-a10cb5a6-a588-4b54-8bad-6d586132daba)`)
     .setColor("C1FF00")
-    .setFooter("Comando Requisitado por: " + nomeeapelido, message.author.avatarURL)
+    .setFooter("Comando Requisitado por: ", message.author.avatarURL)
     .setTimestamp(new(Date))
     
     message.channel.send(embed);
