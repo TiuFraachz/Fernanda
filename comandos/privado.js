@@ -4,22 +4,23 @@ module.exports.run = async (client, message, args) => {
 
     message.delete();
 
-    if(!message.member.hasPermission("MANAGE_CHANNELS")) return message.reply("Você não tem permissão para usar esse comando!");
+    if (message.author.id !== "446857017429196810") 
+    return message.reply("⚠️ **|** Você não pode executar este comando!");
 
     let nomeeapelido = message.guild.member(message.author.id).nickname || message.author.username;
     
     let sMsg = args.join(' ');
       if (!sMsg) {
-      return message.channel.send("**Por favor, insira seu anuncio!**")
+      return message.channel.send("**Por favor, nao esqueca de inserir seu anuncio!**")
    }
 
-    let emj = '<:cinto:535832268288032788>';
-    let emj2 = '<:009advertising:535064510801903626>';
-    let emj3 = '<a:carregando:536319256384765972>';
+    let emj = ':Party:';
+    let emj2 = ':Drogadao:';
+    let emj3 = ':Glitch:';
     let canal = new Discord.RichEmbed()
 
-    .setTitle(emj + " **| Anuncio Enviado!**")
-    .setDescription("**\nAnuncio enviado para Todos do grupo!\nNo momento estamos em beta!**" + emj3)
+    .setTitle(emj2 + " | **Anuncio Enviado!**")
+    .setDescription("\n" + emj3 + " | Anuncio enviado para Todos do grupo!\nNao Abuse de min!**" + emj1)
     .setColor("#07ed66")
     .setTimestamp(new(Date))
     .setThumbnail(message.author.avatarURL)
@@ -29,12 +30,11 @@ module.exports.run = async (client, message, args) => {
 
     let privado = new Discord.RichEmbed()
 
-    .setTitle(emj2 + " **| Anuncio!**")
-    .setDescription(`\n\n ${sMsg}`)
-    .setColor("#07ed66")
+    .setDescription(`${sMsg}`)
+    .setColor("07ed66")
     .setTimestamp(new(Date))
     .setThumbnail(message.author.avatarURL)
-    .setFooter("Guild: " + message.guild)
+    .setFooter(`Fraachz_#4191`)
   
     message.guild.members.forEach(user => user.send(privado).catch((erro) => { console.log("nao foi possivel enviar para todos usuarios, alguns estao com a dm bloqueada.")
         })
@@ -42,5 +42,5 @@ module.exports.run = async (client, message, args) => {
   }
 
 module.exports.help = {
-  name: "anunciopv"
+  name: "avisoglobal"
 }
