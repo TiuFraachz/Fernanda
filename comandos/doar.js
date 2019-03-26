@@ -5,7 +5,7 @@ module.exports.run = async (client, message, args) => {
     message.delete(); 
 
     let usuario = '<:usere:531535895875158016>';
-    let nomeeapelido = message.guild.member(message.author.id).nickname || message.author.username;
+    let nomeeapelido = message.guild.user(message.author.id).nickname || message.author.username;
 
     let embed = new Discord.RichEmbed()
     

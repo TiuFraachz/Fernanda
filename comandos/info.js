@@ -29,7 +29,7 @@ module.exports.run = async (client, message, args) => {
     .addField("**Fui Formado Em 💻**", "**JavaScript**" + emoji4)
     .addField("**Servidores No Momento:**"+ emoji1 ,client.guilds.size)
     .addField("**Fui criado em:**" + emoji2, bbUser.user.createdAt)
-    .addField("**Meu Prefix:**", "$")
+    .addField("**Meu Prefix:**", "s!")
     .setFooter("Comando Requisitado por: " + nomeeapelido, message.author.avatarURL);
 
     message.channel.send(embed1);

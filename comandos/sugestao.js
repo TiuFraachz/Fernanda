@@ -12,7 +12,7 @@ module.exports.run = async (client, message, args) => {
     let emj = '<:email:531064750000308224>';
     let sug = new Discord.RichEmbed()
 
-    .setTitle(emj + " **Sedex | Sugestoes**")
+    .setTitle(emj + " **Feh | Sugestoes**")
     .setDescription(`${sMsg}`)
     .setTimestamp(new(Date))
     .setColor("#07ed66")
