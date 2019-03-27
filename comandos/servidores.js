@@ -6,8 +6,6 @@ module.exports.run = (client, message, args) => {
     
     let bicon = client.user.displayAvatarURL;
     let string = '';
-
-    let nomeeapelido = message.guild.member(message.author.id).nickname || message.author.username;
     
     client.guilds.forEach(guild => {
     string += guild.name + '\n';})
@@ -21,7 +19,7 @@ module.exports.run = (client, message, args) => {
         .setColor("6B74E7")
         .addField(emj + " **Servidores que estou:**", string)
         .setTimestamp(new(Date))
-        .setFooter("Comando Requisitado por: " + nomeeapelido, message.author.avatarURL);
+        .setFooter("Comando Requisitado por: ", message.author.avatarURL);
     
         message.channel.send(botembed);
 }

@@ -5,7 +5,6 @@ moment.locale("pt-BR");
 module.exports.run = async (client, message, args) => {
 
     var member = message.member;
-    let nomeeapelido = message.guild.member(message.author.id).nickname || message.author.username;
     let bbUser = message.mentions.members.first();
     if(bbUser) {
         let guilda = await message.guild.fetchMembers();
@@ -30,7 +29,7 @@ module.exports.run = async (client, message, args) => {
     .addField("**Servidores No Momento:**"+ emoji1 ,client.guilds.size)
     .addField("**Fui criado em:**" + emoji2, bbUser.user.createdAt)
     .addField("**Meu Prefix:**", "s!")
-    .setFooter("Comando Requisitado por: " + nomeeapelido, message.author.avatarURL);
+    .setFooter("Comando Requisitado por: ", message.author.avatarURL);
 
     message.channel.send(embed1);
 }

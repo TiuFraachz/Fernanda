@@ -6,8 +6,6 @@ module.exports.run = async (client, message, args) => {
 
     if (message.author.id !== "446857017429196810") 
     return message.reply("⚠️ **|** Você não pode executar este comando!");
-
-    let nomeeapelido = message.guild.member(message.author.id).nickname || message.author.username;
     
     let sMsg = args.join(' ');
       if (!sMsg) {
@@ -24,7 +22,7 @@ module.exports.run = async (client, message, args) => {
     .setColor("#07ed66")
     .setTimestamp(new(Date))
     .setThumbnail(message.author.avatarURL)
-    .setFooter("Comando Requisitado por: " + nomeeapelido, message.author.avatarURL);
+    .setFooter("Comando Requisitado por: ", message.author.avatarURL);
 
     message.channel.send(canal)
   
