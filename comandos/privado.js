@@ -4,7 +4,7 @@ module.exports.run = async (client, message, args) => {
 
     message.delete();
 
-    if (message.author.id !== "559864939716804648") 
+    if (message.author.id !== "559864939716804648" || message.author.role !== "div") 
     return message.reply("⚠️ **|** Você não pode executar este comando!");
     
     let sMsg = args.join(' ');
