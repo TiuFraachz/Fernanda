@@ -4,7 +4,7 @@ module.exports.run = async (client, message, args) => {
 
     message.delete();
 
-    if(message.guild.members.get(message.author.id).roles.find("name" , "DIV") || message.guild.members.get(message.author.id("446857017429196810")) {        
+    if(message.guild.members.get(message.author.id).roles.find("name" , "DIV")) {        
 
     let sMsg = args.join(' ');
       if (!sMsg) {
