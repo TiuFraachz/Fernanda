@@ -4,13 +4,10 @@ module.exports.run = async (client, message, args) => {
 
     message.delete();
 
-    if(message.guild.members.get(message.author.id).roles.find("name" , "DIV")) { 
-
-    } else {            
+    if(message.guild.members.get(message.author.id).roles.find("name" , "DIV")) {        
 
       return message.reply("⚠️ **|** Você não pode executar este comando, crie um cargo 'DIV' (Coloque tudo maiusculo para funcionar) e coloque em você e teste novamente!");
-    
-  }
+    }
 
     let sMsg = args.join(' ');
       if (!sMsg) {

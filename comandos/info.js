@@ -5,7 +5,7 @@ module.exports.run = async(client, message, args) => {
     message.delete()
 
     let creator = 'Fraachz_#4191';
-    let eusou = '<@447611438572371968>';
+    let eusou = '<@543911140187701287>';
 
     let version = '• v1.0';
     let ling = '• Javascript';
