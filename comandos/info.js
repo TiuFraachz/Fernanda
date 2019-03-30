@@ -1,38 +1,43 @@
-const Discord = require('discord.js')
-const moment = require("moment");
-moment.locale("pt-BR");
+const Discord = require('discord.js');
 
-module.exports.run = async (client, message, args) => {
+module.exports.run = async(client, message, args) => {
 
-    var member = message.member;
-    let bbUser = message.mentions.members.first();
-    if(bbUser) {
-        let guilda = await message.guild.fetchMembers();
-        member = guilda.members.get(bbUser.id);
-    } else {
-        bbUser = message.member;
-    }
+    message.delete()
 
+    let creator = 'Fraachz_#4191';
+    let eusou = '<@447611438572371968>';
 
-    let emoji1 = "<:tudosobremodobountybrawlstarsdic:530939548549775421>"
-    let emoji2 = "📇"
-    let emoji3 = "📋" 
-    let emoji4 = "<:javascript:530939753156050954>"
+    let version = '• v1.0';
+    let ling = '• Javascript';
+    let suporte = '• Em Breve';
+    let loc = '• Brasil ';
+    let dev = '• <@446857017429196810>';
 
-    let embed1 = new Discord.RichEmbed()
+    let emj = '🤖';
+    let emj2 = '💻';
+    
+    let emj3 = '<:javascript:530939753156050954>';
+    let emj4 = '<a:EngrenagemGif:530939630439366657>';
+    let emj5 = '<:brasil:560197448669331456>';
 
-    .setTitle("**Minhas Caracteristicas:**" + emoji3)
+    let inf = new Discord.RichEmbed()
+
+    .setTitle(`**INFORMAÇÃO DO BOT**`)
+    .setDescription(`Olá eu sou o ${eusou}, sou programado em\nJavaScript. Caso esteja perdido ou achar algum BUG utilize o \nnosso suporte abaixo:`)
+    .addField(`${emj} VERSAO DO BOT:`, `${version}`)
+    .addField(`${emj3} LINGUAGEM:`, `${ling}`)
+    .addField(`${emj4} SUPORTE:`, `${suporte}`)
+    .addField(`${emj5} LOCALIZAÇÃO:`, `${loc}`)
+    .addField(`${emj2} DESENVOLVEDOR:`, `${dev}`)
+    .setThumbnail(client.user.displayAvatarURL)
     .setTimestamp(new(Date))
-    .setColor(0x07ed66)
-    .addField("**Meu Criador: 🤖**", "**Fraachz_#4191**")
-    .addField("**Fui Formado Em 💻**", "**JavaScript**" + emoji4)
-    .addField("**Servidores No Momento:**"+ emoji1 ,client.guilds.size)
-    .addField("**Fui criado em:**" + emoji2, bbUser.user.createdAt)
-    .addField("**Meu Prefix:**", "s!")
-    .setFooter("Comando Requisitado por: ", message.author.avatarURL);
+    .setFooter(`${creator} • © 2019`, client.user.displayAvatarURL)
 
-    message.channel.send(embed1);
+    message.channel.send(inf).then(message => {
+        message.react(`🔥`)
+    })
 }
+
 module.exports.help = {
-    name: "info"
+    name: 'info'
 }

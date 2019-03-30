@@ -4,9 +4,14 @@ module.exports.run = async (client, message, args) => {
 
     message.delete();
 
-    if (message.author.role !== "div") 
-    return message.reply("⚠️ **|** Você não pode executar este comando, crie um cargo 'div' e coloque em você e teste novamente!");
+    if(message.guild.members.get(message.author.id).roles.find("name" , "DIV")) { 
+
+    } else {            
+
+      return message.reply("⚠️ **|** Você não pode executar este comando, crie um cargo 'DIV' (Coloque tudo maiusculo para funcionar) e coloque em você e teste novamente!");
     
+  }
+
     let sMsg = args.join(' ');
       if (!sMsg) {
       return message.channel.send("**Por favor, nao esqueca de inserir seu anuncio!**")
