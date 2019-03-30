@@ -6,9 +6,6 @@ module.exports.run = async (client, message, args) => {
 
     if(message.guild.members.get(message.author.id).roles.find("name" , "DIV")) {        
 
-      return message.reply("⚠️ **|** Você não pode executar este comando, crie um cargo 'DIV' (Coloque tudo maiusculo para funcionar) e coloque em você e teste novamente!");
-    }
-
     let sMsg = args.join(' ');
       if (!sMsg) {
       return message.channel.send("**Por favor, nao esqueca de inserir seu anuncio!**")
@@ -31,6 +28,10 @@ module.exports.run = async (client, message, args) => {
     message.guild.members.forEach(user => user.send(sMsg).catch((erro) => { console.log("nao foi possivel enviar para todos usuarios, alguns estao com a dm bloqueada.")
         })
       )
+    } else {
+      
+      return message.reply("⚠️ **|** Você não pode executar este comando, crie um cargo 'DIV' (Coloque tudo maiusculo para funcionar) e coloque em você e teste novamente!");
+    }
   }
 
 module.exports.help = {
