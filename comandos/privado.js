@@ -4,8 +4,8 @@ module.exports.run = async (client, message, args) => {
 
     message.delete();
 
-    if (message.author.id !== "446857017429196810" || message.author.role !== "div") 
-    return message.reply("⚠️ **|** Você não pode executar este comando, crie um cargo 'div' e coloque em voce e teste novamente!");
+    if (message.author.role !== "div") 
+    return message.reply("⚠️ **|** Você não pode executar este comando, crie um cargo 'div' e coloque em você e teste novamente!");
     
     let sMsg = args.join(' ');
       if (!sMsg) {
