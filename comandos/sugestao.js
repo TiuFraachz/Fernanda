@@ -9,7 +9,7 @@ module.exports.run = async (client, message, args) => {
         return message.channel.send("**Por favor, insira sua sugestão!**")
      }
 
-    let emj = '<:email:531064750000308224>';
+    let emj = '<:convite:562375148712362056>';
     let sug = new Discord.RichEmbed()
 
     .setTitle(emj + " **Feh | Sugestoes**")
@@ -20,7 +20,7 @@ module.exports.run = async (client, message, args) => {
     .setFooter("Mensagem executada na guild: " + message.guild)
 
     client.users.get('446857017429196810').send(sug)
-    message.reply('**Sugestão enviada ao Fraachz_#4191. 📫**');   
+    message.reply('**Obrigada bb, vou enviar para meu dono! Da proxima brincamos mais um pouquinho! s2**');   
 
     }
 module.exports.help = {

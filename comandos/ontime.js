@@ -8,8 +8,8 @@ module.exports.run = (bot, message, args) => {
 
     let duration = moment.duration(bot.uptime).format('D [d], H [h], m [m], s [s]');
     
-    let emj = '<:cargos:531535895774625813>'
-    let emj2 = '<:relogio:532932310929244166>'
+    let emj = '<:cargos:562390866799624235>'
+    let emj2 = '<:relogio:562374617679790080>';
 
     let embed = new Discord.RichEmbed()
 

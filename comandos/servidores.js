@@ -11,7 +11,7 @@ module.exports.run = (client, message, args) => {
     string += guild.name + '\n';})
     
     let bt = client.user.username;
-    let emj = '<:029list:535064511988891659>';
+    let emj = '<:listagem:562394814574755903>';
 
 
     let botembed = new Discord.RichEmbed()
