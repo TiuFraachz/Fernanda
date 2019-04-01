@@ -36,7 +36,7 @@ module.exports.run = async (client, message, args) => {
     • s!ping ➣ **Veja minha Latência.**
     • s!spotify ➣ **Veja oque seu amigo esta ouvindo no spotify.**
     • s!serverinfo ➣ **Veja as informações de seu servidor com facilidade!**
-    • s!hastebin ➣ **Upe codigos no hastebin com facilidade, sem precisar ao menos abrir o google chrome!**
+    • s!hastebin ➣ **Upe codigos no hastebin com facilidade!**
     • s!avatar ➣ **Roube o avatar de seu amigo e use voce tambem! RsRs**
     • s!setartopico ➣ **Sete o topico do canal, sem dificuldades!**\n\n
     
