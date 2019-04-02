@@ -27,14 +27,6 @@ let status = [
     { name: `Vem para cama comigo bb? Vamos se divertir muitoooooooo [🔞]`, type: 'STREAMING', url: 'https://www.twitch.tv/frachzin_' }
   ];
   
-let img = [
-    { name: ``, type: 'STREAMING', url: 'https://www.twitch.tv/frachzin_' },
-    { name: ``, type: 'STREAMING', url: 'https://www.twitch.tv/frachzin_' },
-    { name: ``, type: 'STREAMING', url: 'https://www.twitch.tv/frachzin_' },
-    { name: ``, type: 'STREAMING', url: 'https://www.twitch.tv/frachzin_' }
-  ];
-
-  
   //STREAMING = TRANSMITINDO
   //LISTENING = OUVINDO
   //PLAYING = JOGANDO
@@ -43,15 +35,6 @@ let img = [
 
   client.on('ready', () => {
     console.log( `Estou em ${client.guilds.size} servidores com ${client.users.size} usuarios` );
-  
-    function setProfile() {
-      let randomProfile = img[Math.floor(Math.random() * img.length)];
-      client.user.setPresence({profile: imgStatus});
-  }
-
-  setProfile();
-  setInterval(() => setProfile(), 10000); //{1000/1s}\{10000/10s}\{100000/1m}
-
 
     function setStatus() {
         let randomStatus = status[Math.floor(Math.random() * status.length)];
