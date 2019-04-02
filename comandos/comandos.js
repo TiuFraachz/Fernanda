@@ -43,7 +43,7 @@ module.exports.run = async (client, message, args) => {
     - Comandos Para Owners:\n\n
     
     • s!reload ➣ **Reinicie meu sistema.**`)
-    .setFooter("Comando Requisitado por: " + message.author, message.author.avatarURL)
+    .setFooter("Comando Requisitado por: " + message.author.tag, message.author.avatarURL)
     .setTimestamp(new(Date))
 
     message.channel.send(comandos);

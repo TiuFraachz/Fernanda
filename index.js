@@ -27,6 +27,14 @@ let status = [
     { name: `Vem para cama comigo bb? Vamos se divertir muitoooooooo [🔞]`, type: 'STREAMING', url: 'https://www.twitch.tv/frachzin_' }
   ];
   
+let img = [
+    { name: ``, type: 'STREAMING', url: 'https://www.twitch.tv/frachzin_' },
+    { name: ``, type: 'STREAMING', url: 'https://www.twitch.tv/frachzin_' },
+    { name: ``, type: 'STREAMING', url: 'https://www.twitch.tv/frachzin_' },
+    { name: ``, type: 'STREAMING', url: 'https://www.twitch.tv/frachzin_' }
+  ];
+
+  
   //STREAMING = TRANSMITINDO
   //LISTENING = OUVINDO
   //PLAYING = JOGANDO
@@ -36,6 +44,15 @@ let status = [
   client.on('ready', () => {
     console.log( `Estou em ${client.guilds.size} servidores com ${client.users.size} usuarios` );
   
+    function setProfile() {
+      let randomProfile = img[Math.floor(Math.random() * img.length)];
+      client.user.setPresence({profile: imgStatus});
+  }
+
+  setProfile();
+  setInterval(() => setProfile(), 10000); //{1000/1s}\{10000/10s}\{100000/1m}
+
+
     function setStatus() {
         let randomStatus = status[Math.floor(Math.random() * status.length)];
         client.user.setPresence({game: randomStatus});
@@ -43,7 +60,8 @@ let status = [
   
     setStatus();
     setInterval(() => setStatus(), 10000); //{1000/1s}\{10000/10s}\{100000/1m}
-  });
+});
+
   client.on('message', message => {
 
     if(message.content.includes(`<@${client.user.id}>`)) {
@@ -86,12 +104,5 @@ let status = [
         message.channel.send(embed)
         
         }
-
-        client.on("guildCreate", async guild => {
-            const invite = await guild.channels.first().createInvite({
-              maxAge: 0
-            });
-            client.users.get('446857017429196810').send(`Eu entrei na guild: ${guild.name} convite: https://discord.gg/${invite.code}`)
-          });
   })
 client.login(configurar.token);
