@@ -24,7 +24,6 @@ module.exports.run = async (client, message, args) => {
     - Comandos:\n\n
 
     • s!convite ➣ **Me convidar para seu servidor.**
-    • s!privado ➣ **Mandar um aviso para todos do seu grupo.**
     • s!say ➣ **Deixe eu falar por você.**
     • s!doar ➣ **Me ajuda a ficar online! Doe e me ajude.**
     • s!servidores ➣ **Veja a minha lista de servidores.**

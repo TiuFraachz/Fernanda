@@ -16,17 +16,18 @@ module.exports.run = async (client, message, args) => {
 
     .setDescription(`${emj2} | Recentes\n\n
     
+    **☁ Comando 'privado' retirado.**
+    **☁ Comando 'spotify' reformulado.**
+    **☁ Comando 'ping' reformulado.**
+    **☁ <@406596101093982209> adicionado como desenvolvedor.**
+
+    **${emj3} | Antigos\n\n**
+
     **☁ DataBase adicionado.**
     **☁ Comando "Novidades" adicionado.**
     **☁ Comando addvip adicionado.**
     **☁ Comando "ban / unban" adicionado.**
-    **☁ Comando "darcargo / tirarcargo" adicionado.**\n\n
-
-    **${emj3} | Antigos\n\n**
-
-    **☁ Comando "spotify" adicionado.**
-    **☁ Comando "perfil" adicionado.**
-    **☁ Comando "total" reformulado.**
+    **☁ Comando "darcargo / tirarcargo" adicionado.**
     `)
 
     .setTimestamp(new(Date))

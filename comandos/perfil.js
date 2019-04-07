@@ -26,6 +26,9 @@ module.exports.run = async (client, message, args) => {
     if(member.hasPermission("ADMINISTRATOR") === true) administrador = `${emj3} Sim`;
     if(member.hasPermission("ADMINISTRATOR") === false) administrador = `${emj4} Não`;
 
+    let vip;
+    vip = `${emj4} Não`;
+
     let statusmebro;
 
     if(member.presence.status === "dnd") statusmebro = `${emj7} Ocupado`;
@@ -47,6 +50,7 @@ module.exports.run = async (client, message, args) => {
     ${emj2} **| Conta existe há:** ${Math.round(Math.abs((member.user.createdAt.getTime() - new Date().getTime())/(24*60*60*1000)))} dias.
     **${emj2} | Status:** ${statusmebro}
     **${emj2} | Jogando:** ${member.user.presence.game ? member.user.presence.game.name : 'Nada no momento'}\n\n
+    **${emj2} | VIP:** ${vip}
     **${emj2} | Administrador:** ${administrador}\n\n
     **${emj2} | Cargo(s):** ${message.guild.member(member.id).roles.filter(r => r.name != '@everyone').map(r => r)}`)
     .setTimestamp(new(Date))

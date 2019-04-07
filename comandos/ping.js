@@ -11,7 +11,8 @@ module.exports.run = async (bot, message, args) => {
     .setTitle('***Pong 🏓***')
     .setColor('RANDOM')
     .setThumbnail(message.guild.iconURL)
-    .addField("Meu ping?", `Checkado! Minha Latência é de **${Math.round(bot.ping)}ms.**`)
+    .setDescription(`**Meu ping?**\n\n
+    Checkado! Minha Latência é de **${Math.round(bot.ping)}ms.`)
     .setImage("https://cdn.discordapp.com/attachments/529064545478508544/547041937073373194/rainbow.gif") 
     .setFooter(`${creator} • © 2019`, client.user.displayAvatarURL)
 

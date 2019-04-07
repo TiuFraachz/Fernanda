@@ -15,7 +15,7 @@ module.exports.run = async(client, message, args) => {
     let ling = '• Javascript';
     let suporte = '• Em Breve';
     let loc = '• Brasil ';
-    let dev = '• <@446857017429196810>';
+    let dev = '• <@446857017429196810> , <@406596101093982209>';
 
     let emj = '🤖';
     let emj2 = '💻';
@@ -48,7 +48,7 @@ module.exports.run = async(client, message, args) => {
     .addField(`${emj3} LINGUAGEM:`, `${ling}`)
     .addField(`${emj4} SUPORTE:`, `${suporte}`)
     .addField(`${emj5} LOCALIZAÇÃO:`, `${loc}`)
-    .addField(`${emj2} DESENVOLVEDOR:`, `${dev}`)
+    .addField(`${emj2} DESENVOLVEDOR(ES):`, `${dev}`)
     .addField(`${emj7} PLATAFORMA:`, `${os.platform()}`)
     .addField(`${emj6} MEMORIA LIVRE:`, `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} / ${(os.totalmem() / 1024 / 1024).toFixed(2)} MB`)
     .addField(`${emj8} CPU:`, `${os.cpus().map(i => `${i.model}`)[0]}`)

@@ -19,7 +19,7 @@ module.exports.run = async (bot, message, args) => {
             .addField('Música: ', trackName, true)
             .addField('Álbum:', trackAlbum, true)
             .addField('Autor: ', trackAuthor, true)
-            .addField('Ouça no Spotify: ', `[\`${trackURL}\`](trackURL)`, false);
+            .addField('Ouça no Spotify: ', `[\`CLIQUE\`](${trackURL})`, false);
 
             message.channel.send(embed);
 
