@@ -1,5 +1,5 @@
-const Discord = require("discord.js"); 
-const client = new Discord.Client(); 
+const Discord = require('discord.js');
+const client = new Discord.Client();
 const configurar = require("./config.json"); 
 const fs = require("fs");
 const randomPuppy = require('random-puppy');

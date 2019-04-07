@@ -38,11 +38,17 @@ module.exports.run = async (client, message, args) => {
     • s!serverinfo ➣ **Veja as informações de seu servidor com facilidade!**
     • s!hastebin ➣ **Upe codigos no hastebin com facilidade!**
     • s!avatar ➣ **Roube o avatar de seu amigo e use voce tambem! RsRs**
-    • s!setartopico ➣ **Sete o topico do canal, sem dificuldades!**\n\n
+    • s!setartopico ➣ **Sete o topico do canal, sem dificuldades!**
+    • s!novidades ➣ **Veja minhas novidades, tudo em primeira mao!**
+    • s!ban ➣ **Bana algum membro indisciplinar.**
+    • s!unban ➣ **Puniu errado? Aproveite de min! Desbana o seu amigo que puniu "Sem querer".**
+    • s!darcargo ➣ **De um cargo especial para aquele seu amigo, sem medo de dar errado!**
+    • s!tirarcargo ➣ **Retire o cargo de algum amigo que so faz merda sem pensar 2 vezes.**\n\n
     
     - Comandos Para Owners:\n\n
     
-    • s!reload ➣ **Reinicie meu sistema.**`)
+    • s!reload ➣ **Reinicie meu sistema.**
+    • s!addvip ➣ **Adicione um membro como PREMIUM.**`)
     .setFooter("Comando Requisitado por: " + message.author.tag, message.author.avatarURL)
     .setTimestamp(new(Date))
 
