@@ -15,19 +15,21 @@ module.exports.run = async (client, message, args) => {
     .setTitle(`${emj} | Novidades\n`)
 
     .setDescription(`${emj2} | Recentes\n\n
-    
+
+    **☁ <@432626838393847809> adicionado como desenvolvedor.**
+    **☁ Comando 'adddev' adicionado.**
+    **☁ Comando 'addstaff' adicionado.**
+    **☁ Comando 'parceiros' adicionado.**
+    **☁ Comando 'convite' reformulado.**
+    **☁ Comando 'perfil' reformulado.**
+    **☁ Comando 'info' reformulado.**\n\n
+
+    **${emj3} | Antigos\n\n**
+
     **☁ Comando 'privado' retirado.**
     **☁ Comando 'spotify' reformulado.**
     **☁ Comando 'ping' reformulado.**
     **☁ <@406596101093982209> adicionado como desenvolvedor.**
-
-    **${emj3} | Antigos\n\n**
-
-    **☁ DataBase adicionado.**
-    **☁ Comando "Novidades" adicionado.**
-    **☁ Comando addvip adicionado.**
-    **☁ Comando "ban / unban" adicionado.**
-    **☁ Comando "darcargo / tirarcargo" adicionado.**
     `)
 
     .setTimestamp(new(Date))

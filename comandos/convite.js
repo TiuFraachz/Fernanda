@@ -8,6 +8,7 @@ module.exports.run = async (client, message, args) => {
     .setTitle("<:convite:562375148712362056> | Convite")
     .setColor("RANDOM")
     .addField("Me adicione em seu servidor:", `<:nuvempreta:562375513860079648> [[Clique Aqui]](https://discordapp.com/oauth2/authorize?client_id=543911140187701287&scope=bot&permissions=8)`)
+    .addField("Veja meu site:", `<:nuvempreta:562375513860079648> [[Clique aqui]](http://fernandabot.cf)`)
     .setFooter("Comando Requisitado por: ", message.author.avatarURL)
     .setTimestamp(new(Date))
     

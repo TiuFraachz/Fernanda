@@ -42,12 +42,15 @@ module.exports.run = async (client, message, args) => {
     • s!ban ➣ **Bana algum membro indisciplinar.**
     • s!unban ➣ **Puniu errado? Aproveite de min! Desbana o seu amigo que puniu "Sem querer".**
     • s!darcargo ➣ **De um cargo especial para aquele seu amigo, sem medo de dar errado!**
-    • s!tirarcargo ➣ **Retire o cargo de algum amigo que so faz merda sem pensar 2 vezes.**\n\n
+    • s!tirarcargo ➣ **Retire o cargo de algum amigo que so faz merda sem pensar 2 vezes.**
+    • s!parceiros ➣ **Veja os servidores que me divulgam e me ajudam.**\n\n
     
     - Comandos Para Owners:\n\n
     
     • s!reload ➣ **Reinicie meu sistema.**
-    • s!addvip ➣ **Adicione um membro como PREMIUM.**`)
+    • s!addvip ➣ **Adicione um membro como PREMIUM.**
+    • s!addstaff ➣ **Adicione um membro como STAFF.**
+    • s!adddev ➣ **Adicione um membro como DEV.**`)
     .setFooter("Comando Requisitado por: " + message.author.tag, message.author.avatarURL)
     .setTimestamp(new(Date))
 
