@@ -8,7 +8,7 @@ module.exports.run = async(client, message, args) => {
     
     .setTitle(`** | Parceiros**`)
     
-    .setDescription(`**Servidores Aliados:**\n\n
+    .setDescription(`**Servidores Aliados:**\n
     
     **BotsParaDiscord » https://discord.gg/t5qzWQB**
     **Em Breve...**
