@@ -19,7 +19,7 @@ fs.readdir("./comandos/", (err, files) => {
     });
 });
 
-let prefix = 's!'
+let prefix = 's!' 
 let status = [
     { name: `Oi bb! Use ${prefix}comandos e venha me conhecer [🌠]`, type: 'STREAMING', url: 'https://www.twitch.tv/frachzin_' },
     { name: `Oi gatinho! Caso queira me doar use ${prefix}doar [🎈]`, type: 'STREAMING', url: 'https://www.twitch.tv/frachzin_' },
@@ -47,7 +47,9 @@ let status = [
 
   client.on('message', message => {
 
+
     if(message.content.includes(`<@${client.user.id}>`)) {
+
 
         let emj = '<:055notification:535064514576515082>';
         let embed = new Discord.RichEmbed()
@@ -85,7 +87,7 @@ let status = [
         .setThumbnail(message.author.avatarURL)
         .setFooter(`Fraachz_#4191 • © 2019`, client.user.displayAvatarURL)
         message.channel.send(embed)
-        
+
         }
   })
 client.login(configurar.token);

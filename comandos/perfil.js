@@ -63,6 +63,10 @@ module.exports.run = async (client, message, args) => {
     .setFooter(`${creator} • © 2019`, client.user.displayAvatarURL)
 
             )
+
+            //tipo melhor fazer quando entender melhor
+            //ok :/
+
         })
     })
 }

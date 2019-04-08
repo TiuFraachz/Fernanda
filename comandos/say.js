@@ -14,6 +14,8 @@ module.exports.run = async (client, message, args) => {
     message.mentions.roles.forEach((r) => say = say.replace(r.toString(),"@"+r.name))
     message.channel.send(say,{disableEveryone:true});
 }
+
+//agr vc n vai precisar disso preciso sim, o meu reload pega isso
 module.exports.help = {
     name: "say"
 }

@@ -43,7 +43,8 @@ module.exports.run = async (client, message, args) => {
     • s!unban ➣ **Puniu errado? Aproveite de min! Desbana o seu amigo que puniu "Sem querer".**
     • s!darcargo ➣ **De um cargo especial para aquele seu amigo, sem medo de dar errado!**
     • s!tirarcargo ➣ **Retire o cargo de algum amigo que so faz merda sem pensar 2 vezes.**
-    • s!parceiros ➣ **Veja os servidores que me divulgam e me ajudam.**\n\n
+    • s!parceiros ➣ **Veja os servidores que me divulgam e me ajudam.**
+    • s!limpar ➣ **Limpe o chat poluido do seu grupo.**\n\n
     
     - Comandos Para Owners:\n\n
     
