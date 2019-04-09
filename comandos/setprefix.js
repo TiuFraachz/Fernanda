@@ -1,4 +1,5 @@
-const db = require('quick.db');
+//const db = require('quick.db');
+
 const Discord = require('discord.js');
 
 module.exports.run = async (client, message, args) => {
@@ -15,7 +16,7 @@ module.exports.run = async (client, message, args) => {
     message.channel.send(embed);
 
     //Guardando na db:
-    db.set(`servidorPrefixo_${message.guild.id}`, args[0]);
+    //db.set(`servidorPrefixo_${message.guild.id}`, args[0]);
 };
 
 module.exports.help = {
